@@ -7,7 +7,6 @@ export type IHeaderProps = {
 const Header: React.FC<IHeaderProps> = (props) => {
     return (
         <div>
-
         </div>
     );
 }

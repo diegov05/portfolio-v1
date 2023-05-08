@@ -10,11 +10,11 @@ export type IAppProps = {
 const App: React.FC<IAppProps> = () => {
   return (
     <>
-      <div className='p-4'>
+      <div className='flex flex-col gap-12 p-12'>
         <Header />
         <HiringInfo />
-        <Footer />
         <Projects />
+        <Footer />
       </div>
     </>
   );
