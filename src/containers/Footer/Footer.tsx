@@ -4,10 +4,9 @@ export type IFooterProps = {
 
 }
 
-const Footer: React.FC<IFooterProps> = (props) => {
+const Footer: React.FC<IFooterProps> = () => {
     return (
         <div>
-
         </div>
     );
 }
