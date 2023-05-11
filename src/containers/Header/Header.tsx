@@ -6,9 +6,9 @@ export type IHeaderProps = {
 
 }
 
-const Header: React.FC<IHeaderProps> = (props) => {
+const Header: React.FC<IHeaderProps> = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full flex flex-col gap-2'>
             <Navbar />
             <Hero />
         </div>
