@@ -12,6 +12,7 @@ import nodeLogo from './Node.svg'
 import tailwindLogo from './Tailwind.svg'
 import upwork from './Upwork.svg'
 import linkedin from './Linkedin.svg'
+import topography from './topography.svg'
 
 export {
     hero,
@@ -27,5 +28,6 @@ export {
     react,
     redux,
     firebaseLogo,
-    figma
+    figma,
+    topography
 }
