@@ -4,7 +4,7 @@ export type ISliderProps = {
 
 }
 
-const Slider: React.FC<ISliderProps> = (props) => {
+const Slider: React.FC<ISliderProps> = () => {
     return (
         <div>
 

@@ -4,7 +4,7 @@ export type IProjectsProps = {
 
 }
 
-const Projects: React.FC<IProjectsProps> = (props) => {
+const Projects: React.FC<IProjectsProps> = () => {
     return (
         <div>
 
