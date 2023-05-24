@@ -8,7 +8,7 @@ export type IHeaderProps = {
 
 const Header: React.FC<IHeaderProps> = () => {
     return (
-        <div className='w-full flex flex-col gap-2'>
+        <div className=''>
             <Navbar />
             <Hero />
         </div>
