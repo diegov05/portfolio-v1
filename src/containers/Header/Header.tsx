@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Hero, Navbar } from '../../components';
-import { AiFillGithub, AiFillLinkedin, AiOutlineLinkedin } from "react-icons/ai"
+import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai"
 import images from "../../assets"
 import { FiCodepen, FiCodesandbox } from 'react-icons/fi';
 
