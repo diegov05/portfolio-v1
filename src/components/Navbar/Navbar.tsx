@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai';
+import { FiCodesandbox, FiCodepen } from "react-icons/fi"
 
 export type INavbarProps = {
 
@@ -9,18 +11,23 @@ const Navbar: React.FC<INavbarProps> = () => {
         <>
             <div className='flex flex-row justify-between items-start w-full'>
                 <div className='flex flex-col gap-4 lg:gap-2 xl:gap-2'>
-                    <h1 className='text-white font-black text-xs sm:text-base md:text-lg lg:text-lg xl:text-xl'>Diego Vargas</h1>
-                    <h6 className='text-white font-base text-[8px] leading-5 md:text-xs md:leading-6 lg:text-xs lg:leading-5 xl:text-xs xl:leading-5 w-3/4'>Hello! I'm a Full-Stack  web developer in the MERN stack specialized in 3D designing!</h6>
+                    <h1 className='text-text font-black text-xl md:max-4xl:text-2xl'>Diego Vargas</h1>
+                    <div className='flex flex-row gap-2 justify-start items-center text-text/40'>
+                        <a href="https://github.com/diegov05" target='__blank'>
+                            <AiFillGithub className="w-4 h-4 transition-all hover:text-text" />
+                        </a>
+                        <a href="https://codesandbox.io/u/diegov05" target='__blank'>
+                            <FiCodesandbox className="w-4 h-4 transition-all hover:text-text" />
+                        </a>
+                        <a href="https://codepen.io/diegov05" target='__blank'>
+                            <FiCodepen className="w-4 h-4 transition-all hover:text-text" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/diegovs05" target='__blank'>
+                            <AiOutlineLinkedin className="w-5 h-5 transition-all hover:text-text" />
+                        </a>
+                    </div>
                 </div>
-                <div className='flex flex-row gap-2 sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8'>
-                    <a href="">
-                        <p className='text-white font-black transition-all hover:font-black text-[8px] leading-5 sm:text-xs md:text-xs md:leading-6 lg:text-sm lg:leading-5 xl:text-sm xl:leading-5'>Work</p>
-                    </a><a href="">
-                        <p className='text-white font-base transition-all hover:font-black text-[8px] leading-5 sm:text-xs md:text-xs md:leading-6 lg:text-sm lg:leading-5 xl:text-sm xl:leading-5'>Resume</p>
-                    </a><a href="">
-                        <p className='text-white font-base transition-all hover:font-black text-[8px] leading-5 sm:text-xs md:text-xs md:leading-6 lg:text-sm lg:leading-5 xl:text-sm xl:leading-5'>Contact</p>
-                    </a>
-                </div>
+                <button className='hidden md:max-4xl:flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base md:max-4xl:text-lg'>Contact Me</button>
             </div>
         </>
     );
