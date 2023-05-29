@@ -28,7 +28,7 @@ const Navbar: React.FC<INavbarProps> = () => {
                         </a>
                     </div>
                 </div>
-                <button className='hidden md:max-4xl:flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base md:max-4xl:text-lg'>Contact Me</button>
+                <a href="mailto: diegovs_@outlook.com"><button className='hidden md:max-4xl:flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base md:max-4xl:text-lg transition-all'>Contact Me</button></a>
             </div>
         </>
     );
