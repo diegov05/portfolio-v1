@@ -23,7 +23,7 @@ const Technologies: React.FC<ITechnologiesProps> = () => {
                         <div className="no-scrollbar relative flex flex-row items-center overflow-x-auto">
                             <div data-aos="fade-left" data-aos-delay="300" className="flex flex-row overflow-x-visible gap-4 p-0 md:max-4xl:p-10 pr-0">
                                 {technologiesArr.map((tech) => (
-                                    <TechCard techName={tech.name} />
+                                    <TechCard key={tech.name} techName={tech.name} />
                                 ))}
                             </div>
                         </div>

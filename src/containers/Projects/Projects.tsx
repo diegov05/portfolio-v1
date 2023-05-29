@@ -15,7 +15,7 @@ const Projects: React.FC<IProjectsProps> = () => {
             <div className='flex flex-col gap-12 py-10 px-10 sm:max-4xl:px-20'>
                 <div data-aos="fade-right" className='flex flex-col gap-1 sm:max-lg:gap-3 lg:max-4xl:gap-5 text-center w-full s:max-4xl:text-start h-full'>
                     <h1 className='text-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'>Some of the things</h1>
-                    <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'>I've Built</h1>
+                    <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'><span className='gradient-bg-text'>I've Built</span></h1>
                 </div>
                 <div className='flex flex-col gap-8 w-full h-full'>
                     <div data-aos="fade-right" className='w-full h-96 bg-bg shadow-xl shadow-zinc-300'></div>

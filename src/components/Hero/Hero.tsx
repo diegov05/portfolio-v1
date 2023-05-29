@@ -16,24 +16,24 @@ const Hero: React.FC<IHeroProps> = () => {
             <div className='flex flex-col md:max-4xl:flex-row'>
                 <div className='flex flex-col gap-12 justify-start items-start w-full h-full'>
                     <div data-aos="fade-right" className='flex flex-col gap-3 sm:max-4xl:gap-2 text-center w-full md:max-4xl:text-start'>
-                        <span className='gradient-bg-text text-base sm:max-lg:text-xl lg:max-4xl:text-2xl font-extrabold'>Let's build something amazing</span>
+                        <span className='gradient-bg-text text-base sm:max-lg:text-xl lg:max-4xl:text-2xl font-extrabold'><span className='gradient-bg-text'>Let's build something amazing</span></span>
                         <div className='flex flex-col gap-1 sm:max-lg:gap-3 lg:max-4xl:gap-5  text-center w-full md:max-4xl:text-start h-full' >
                             <h1 className='text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold text-text'>Unlimited Possibilities</h1>
                             <h1 className='text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold text-text'>You imagine it?</h1>
-                            <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'>I'll build it.</h1>
+                            <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'><span className='gradient-bg-text'>I'll build it.</span></h1>
                         </div>
                     </div>
                     <div className='flex flex-col gap-12 justify-center items-center md:max-4xl:items-start w-full'>
                         <img data-aos="fade-up" className='md:max-4xl:hidden block w-64' src={images.hero} alt="" />
                         <div data-aos="fade-up" className='md:max-4xl:hidden w-max flex flex-col justify-center items-center gap-2 '>
                             <a target='__blank' className='w-full' href="https://filmasterv2.web.app/">
-                                <button className='gap-4 justify-center items-center flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg'>
+                                <button className='gap-4 justify-center items-center flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300 hover:text-accent-color'>
                                     Try it out!
                                     <ArrowTopRightOnSquareIcon className='w-6 h-6' />
                                 </button>
                             </a>
                             <a target='__blank' className='w-max' href="https://github.com/diegov05/filmasterV2">
-                                <button className='gap-4 justify-center items-center flex bg-zinc-700 font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg'>
+                                <button className='gap-4 justify-center items-center flex bg-zinc-700 font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300 hover:bg-white hover:text-text'>
                                     <AiFillGithub className='w-6 h-6' />
                                     GitHub Repo
                                     <ArrowTopRightOnSquareIcon className='w-6 h-6' />
