@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css"
-import { Header, Footer, Projects } from './containers';
+import { Header, Footer, Projects, Mockups } from './containers';
 import { Technologies } from './components';
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -17,6 +17,7 @@ const App: React.FC<IAppProps> = () => {
       <Header />
       <Projects />
       <Technologies />
+      <Mockups />
       <Footer />
     </div>
   );
