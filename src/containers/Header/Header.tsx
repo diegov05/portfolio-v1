@@ -132,7 +132,7 @@ const Header: React.FC<IHeaderProps> = () => {
                 </div>
             </div>}
             <div className={`${isMenuToggled ? "blur-sm" : "blur-none"} flex flex-col py-10 px-10 sm:max-4xl:px-20 gap-24 overflow-hidden transition-all duration-500`}>
-                <div className='flex flex-row justify-between items-start'>
+                <div data-aos="fade-down" className='flex flex-row justify-between items-start'>
                     <Navbar />
                     <button onClick={handleToggleMenu} className='md:max-4xl:hidden flex gradient-bg w-min h-min px-2 py-2 rounded-2xl text-bg'>
                         <Bars3Icon className='w-4 h-4' />
