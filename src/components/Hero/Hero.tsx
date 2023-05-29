@@ -64,13 +64,13 @@ const Hero: React.FC<IHeroProps> = () => {
                     <img className='hidden md:max-4xl:block w-[22rem] h-[33rem] lg:max-4xl:h-auto lg:max-4xl:w-96' src={images.hero} alt="" />
                     <div className='w-max flex flex-col justify-center items-center gap-2 '>
                         <a target='__blank' className='w-full' href="https://filmasterv2.web.app/">
-                            <button className='gap-4 justify-center items-center hidden md:max-4xl:flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg'>
+                            <button className='gap-4 justify-center items-center hidden md:max-4xl:flex gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300 hover:text-accent-color'>
                                 Try it out!
                                 <ArrowTopRightOnSquareIcon className='w-6 h-6' />
                             </button>
                         </a>
                         <a target='__blank' className='w-full' href="https://github.com/diegov05/filmasterV2">
-                            <button className='gap-4 justify-center items-center hidden md:max-4xl:flex bg-zinc-700 font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg'>
+                            <button className='gap-4 justify-center items-center hidden md:max-4xl:flex bg-zinc-700 font-bold text-bg px-5 py-2.5 rounded-2xl text-base w-full md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300 hover:bg-white hover:text-text '>
                                 <AiFillGithub className='w-6 h-6' />
                                 GitHub Repo
                                 <ArrowTopRightOnSquareIcon className='w-6 h-6' />

@@ -27,7 +27,7 @@ const Projects: React.FC<IProjectsProps> = () => {
                     </div>
                 </div>
                 <div data-aos="fade-up">
-                    <button className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg'>Read Case Study</button>
+                    <button className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300'>Read Case Study</button>
                 </div>
             </div>
         </div>
