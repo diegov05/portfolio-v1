@@ -1,5 +1,8 @@
 import { FC } from 'react'
 import images from "../../assets"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import "swiper/css"
+
 
 const Mockups: FC = () => {
     return (

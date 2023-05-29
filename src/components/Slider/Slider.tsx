@@ -1,15 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react'
 
-export type ISliderProps = {
-
-}
-
-const Slider: React.FC<ISliderProps> = () => {
+const Slider: FC = () => {
     return (
         <div>
-
+            Slider
         </div>
-    );
+    )
 }
 
 export { Slider };
