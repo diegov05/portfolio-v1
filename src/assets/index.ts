@@ -6,6 +6,9 @@ import phone_alt from './phone3.png'
 import desktop from "./desktop.png"
 import ipad from './iPad.png'
 import laptop from './laptop.png'
+import filmaster from './filmaster.png'
+import pokedex from './pokedex.png'
+import portfolio from "./portfolio.png"
 
 export default {
     footerImage,
@@ -15,5 +18,8 @@ export default {
     phone_alt,
     desktop,
     ipad,
-    laptop
+    laptop,
+    filmaster,
+    pokedex,
+    portfolio
 }
