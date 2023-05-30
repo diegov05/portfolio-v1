@@ -159,7 +159,7 @@ const Header: React.FC<IHeaderProps> = () => {
                             </div>
                         </a>
                     </ScrollLink>
-                    <button className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg'>Resume</button>
+                    <a className='w-full' target='__blank' href="https://drive.google.com/file/d/1dU5n8KvuwvZoGwzL-4E6ua123Y0tYa_z/view?usp=sharing"><button className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg w-full'>Resume</button></a>
                 </div>
                 <div className='w-full flex flex-col justify-center items-center text-bg'>
                     <div className='flex flew-row gap-2 justify-center items-center'>
