@@ -18,7 +18,7 @@ const Projects: React.FC<IProjectsProps> = () => {
                     <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'><span className='gradient-bg-text'>I've Built</span></h1>
                 </div>
                 <div className='flex flex-col gap-8 w-full h-full'>
-                    <div data-aos="fade-right" className='w-full h-96 bg-bg shadow-xl shadow-zinc-300'></div>
+                    <div id='work-section' data-aos="fade-right" className='w-full h-96 bg-bg shadow-xl shadow-zinc-300'></div>
                     <div data-aos="fade-up" className='flex flex-row gap-2 flex-wrap'>
                         <div className='bg-bg-secondary w-max px-5 py-2.5 rounded-2xl font-bold text-xs'>React</div>
                         <div className='bg-bg-secondary w-max px-5 py-2.5 rounded-2xl font-bold text-xs'>Tailwindcss</div>

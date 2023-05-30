@@ -15,7 +15,7 @@ const Footer: React.FC<IFooterProps> = () => {
             </div>
             <img className='absolute -z-50 -top-24 w-96 -left-48 opacity-50' src={images.gradient} alt="" />
             <a href="mailto: diegovs_@outlook.com"><button data-aos="fade-up" className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg transition-all hover:shadow-lg hover:shadow-zinc-300'>Send Email</button></a>
-            <div className='flex flex-col justify-center items-center w-full'>
+            <div id='contact-section' className='flex flex-col justify-center items-center w-full'>
                 <img data-aos="fade-up" src={images.footerImage} className='w-[40rem]' alt="" />
             </div>
         </div>

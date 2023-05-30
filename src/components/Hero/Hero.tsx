@@ -2,8 +2,10 @@ import React from 'react';
 import images from "../../assets"
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import { AiFillGithub } from 'react-icons/ai';
+import { Link as ScrollLink } from 'react-scroll';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+
 
 export type IHeroProps = {
 
@@ -42,18 +44,24 @@ const Hero: React.FC<IHeroProps> = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up" className='p-10 flex flex-col rounded-2xl shadow-zinc-300 shadow-lg w-full md:max-4xl:w-3/4'>
-                        <div className='flex flex-col opacity-70 gap-8'>
+                        <div id='about-section' className='flex flex-col opacity-70 gap-8'>
                             <h2 className='font-bold text-sm md:max-4xl:text-lg text-text'>About Me</h2>
                             <p className='font-base text-sm md:max-4xl:text-lg text-text'>Hi, my name is Diego Vargas, I'm a Full-Stack Web Developer
-                                <b> specialized in the MERN Stack.</b> <span className='gradient-bg-text'><a href=''><b>Learn more about my  tech stack!</b></a></span></p>
+                                <b> specialized in the MERN Stack.</b> <span className='gradient-bg-text'><ScrollLink
+                                    to="tech-section"
+                                    smooth
+                                    duration={500}
+                                    offset={-100}
+                                    spy
+                                    activeClass="active"
+                                ><a><b>Learn more about my  tech stack!</b></a></ScrollLink></span></p>
                             <p className='font-base text-sm md:max-4xl:text-lg text-text'>I'm 19 years old, currently living in the USA.  I love to do everything
                                 related in the process of building a web application, from designing,
                                 to developing and finally deploying projects.</p>
                             <p className='font-base text-sm md:max-4xl:text-lg text-text'>If you would like to contact me, <span className='gradient-bg-text'>
-                                <a href="">
+                                <a href="mailto: diegovs_@outlook.com">
                                     <b>
-                                        click this button located in the top
-                                        section of the page.
+                                        send me an email!
                                     </b>
                                 </a>
                             </span></p>

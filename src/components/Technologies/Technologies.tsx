@@ -10,7 +10,7 @@ export type ITechnologiesProps = {
 const Technologies: React.FC<ITechnologiesProps> = () => {
 
     return (
-        <div data-aos="fade-up" className='flex flex-col gap-12 pl-10 sm:max-4xl:pl-20'>
+        <div id='tech-section' data-aos="fade-up" className='flex flex-col gap-12 pl-10 sm:max-4xl:pl-20'>
             <div className='flex flex-col md:max-4xl:flex-row justify-start items-start md:max-4xl:items-center gap-12 md:max-4xl:gap-24 shadow-2xl rounded-l-2xl shadow-zinc-400 p-5 xs:max-md:pt-10 xs:max-md:pl-10 xs:max-md:pb-10 xs:max-md:pr-0 md:max-4xl:p-32 md:max-4xl:pr-0'>
                 <div className='flex flex-col gap-4 w-2/4'>
                     <h1 className='gradient-bg-text text-2xl sm:max-lg:text-4xl lg:max-4xl:text-6xl font-extrabold'>Tech Stack</h1>

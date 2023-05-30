@@ -4,6 +4,8 @@ import { Hero, Navbar } from '../../components';
 import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai"
 import images from "../../assets"
 import { FiCodepen, FiCodesandbox } from 'react-icons/fi';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 export type IHeaderProps = {
@@ -72,46 +74,91 @@ const Header: React.FC<IHeaderProps> = () => {
                     </button>
                 </div>
                 <div className='flex flex-col gap-6'>
-                    <a href="">
-                        <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
-                            <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
-                                <span className='gradient-bg-text'>01. </span>
-                                Work
-                            </span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
-                            <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
-                                <span className='gradient-bg-text'>02. </span>
-                                About
-                            </span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
-                            <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
-                                <span className='gradient-bg-text'>03. </span>
-                                Projects
-                            </span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
-                            <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
-                                <span className='gradient-bg-text'>04. </span>
-                                Tech Stack
-                            </span>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
-                            <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
-                                <span className='gradient-bg-text'>05. </span>
-                                Contact
-                            </span>
-                        </div>
-                    </a>
+                    <ScrollLink
+                        to="work-section"
+                        smooth
+                        duration={500}
+                        offset={-100}
+                        spy
+                        activeClass="active"
+                    >
+                        <a>
+                            <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
+                                <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
+                                    <span className='gradient-bg-text'>01. </span>
+                                    Work
+                                </span>
+                            </div>
+                        </a>
+                    </ScrollLink>
+                    <ScrollLink
+                        to="about-section"
+                        smooth
+                        duration={500}
+                        offset={-100}
+                        spy
+                        activeClass="active"
+                    >
+                        <a >
+                            <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
+                                <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
+                                    <span className='gradient-bg-text'>02. </span>
+                                    About
+                                </span>
+                            </div>
+                        </a>
+                    </ScrollLink>
+                    <ScrollLink
+                        to="samples-section"
+                        smooth
+                        duration={500}
+                        offset={-100}
+                        spy
+                        activeClass="active"
+                    >
+                        <a >
+                            <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
+                                <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
+                                    <span className='gradient-bg-text'>03. </span>
+                                    Samples
+                                </span>
+                            </div>
+                        </a>
+                    </ScrollLink>
+                    <ScrollLink
+                        to="tech-section"
+                        smooth
+                        duration={500}
+                        offset={-100}
+                        spy
+                        activeClass="active"
+                    >
+                        <a >
+                            <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
+                                <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
+                                    <span className='gradient-bg-text'>04. </span>
+                                    Tech Stack
+                                </span>
+                            </div>
+                        </a>
+                    </ScrollLink>
+                    <ScrollLink
+                        to="contact-section"
+                        smooth
+                        duration={500}
+                        offset={-100}
+                        spy
+                        activeClass="active"
+                    >
+                        <a >
+                            <div className='flex flex-col justify-start items-center px-5 py-3 rounded-2xl'>
+                                <span className='flex flex-row gap-2 xs:max-4xl:gap-6 text-sm xs:text-base font-bold text-bg'>
+                                    <span className='gradient-bg-text'>05. </span>
+                                    Contact
+                                </span>
+                            </div>
+                        </a>
+                    </ScrollLink>
                     <button className='gradient-bg font-bold text-bg px-5 py-2.5 rounded-2xl text-xs md:max-4xl:text-lg'>Resume</button>
                 </div>
                 <div className='w-full flex flex-col justify-center items-center text-bg'>
