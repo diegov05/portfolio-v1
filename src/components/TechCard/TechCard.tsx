@@ -11,7 +11,7 @@ const TechCard: FC<TechCardProps> = (props) => {
     const { techName } = props
 
     return (
-        <div className='flex flew-row justify-center items-center text-bg gap-6 p-10 md:max-4xl:p-20 gradient-bg rounded-2xl shadow-xl shadow-zinc-300 hover:text-accent-color'>
+        <div className='flex flew-row justify-center items-center text-bg gap-6 p-10 md:max-4xl:p-20 gradient-bg rounded-2xl shadow-xl shadow-zinc-300 transition-all hover:text-accent-color'>
             {techName === "React" ? <FaReact className="w-10 h-10" /> :
                 techName === "Express" ? <SiExpress className="w-10 h-10" /> :
                     techName === "NodeJS" ? <FaNodeJs className="w-10 h-10" /> :
